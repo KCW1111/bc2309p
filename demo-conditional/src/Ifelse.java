@@ -28,5 +28,39 @@ public class Ifelse {
             System.out.println("y > 9");
         }
 
+        //boolean
+        boolean isMale = false;
+        if (isMale){
+            System.out.println("I am Male");
+        }else{
+            System.out.println("I am Female");
+        }
+
+        //Char
+        char grade = 'A';
+        if (grade == 'B'){
+            System.out.println("it is B");
+        }else if (grade =='C'|| grade == 'A'){
+            System.out.println("It is C or A");
+        }else{
+            System.out.println("bye");
+        }
+
+        // check if a number is an even number
+        int num = 10;
+        if (num % 2 ==0){
+            System.out.println("it is an even number. num=" + num);
+        }
+
+        // check if a number is an odd number
+        int num2 = 9;
+        if (num2 % 2 ==1){
+            System.out.println("it is an odd number. num=" + num2);
+        }else {
+            System.out.println("it is an even number. num=" + num2);
+        }
+
     }
 }
+
+
