@@ -23,5 +23,16 @@ public class TestLoop {
             System.out.println("x=" + x);
         }
         System.out.println(x); //256
+
+        /* 
+        for (byte b = 0; b<128; b++){
+            System.out.println(b);
+            // when b = 127 -> b++ -> -128 -> -128 < 128??? -> infinity loop
+        }
+        */
+        for (byte b = 0; b >= 0; b++){
+            System.out.println(b);
+
+        }
     }
 }
