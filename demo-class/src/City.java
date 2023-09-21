@@ -2,7 +2,7 @@ public class City {
 
   int population;
   long latitude;
-  long longituge;
+  long longitude;
   int area;
   String countryName;
 
@@ -14,7 +14,7 @@ public class City {
   }public void setLatitude(long latitude) {
     this.latitude = latitude;
   }public void setLongituge(long longituge) {
-    this.longituge = longituge;
+    this.longitude = longituge;
   }public void setPopulation(int population) {
     this.population = population;
   }
@@ -25,7 +25,7 @@ public class City {
   }public long getLatitude() {
     return latitude;
   }public long getLongituge() {
-    return longituge;
+    return longitude;
   }public int getPopulation() {
     return population;
   }
@@ -37,7 +37,7 @@ public class City {
   }
 
   public String isHongKong(){
-    if (this.latitude == 22 && this.longituge == 114)
+    if (this.latitude == 22 && this.longitude == 114)
       return "This city is likely Hong Kong.";
     return "This cit is not likely Hong Kong";
   }
@@ -46,7 +46,7 @@ public class City {
     ABC.area = 1000000;
     System.out.println(ABC.isLarge());
     ABC.latitude = 22;
-    ABC.longituge = 114;
+    ABC.longitude = 114;
     System.out.println(ABC.isHongKong());
   }
 }
