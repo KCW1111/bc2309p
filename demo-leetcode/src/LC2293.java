@@ -10,10 +10,8 @@ public class LC2293 { // Min Max Game
         int[] newNums = new int[nums.length/2];
       for (int i = 0; i < nums.length/2; i++){
           if (i % 2 == 0){
-            System.out.println("I am inside even, i is: " + i);
             newNums[i] = Math.min(nums[2 * i], nums[2 * i + 1]);
           } else {
-          System.out.println("I ma running odd, i is: " + i);
           newNums[i] = Math.max(nums[2 * i], nums[2 * i + 1]);
           }
         }
@@ -21,8 +19,6 @@ public class LC2293 { // Min Max Game
     }
 
     return nums[0];
-    
-
     
   }
 
