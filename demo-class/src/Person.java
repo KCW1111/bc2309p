@@ -9,6 +9,10 @@ public class Person {
     this.age = age;
   }
 
+  public void setLastName(String lastName){
+    this.lastName = lastName;
+  }
+
   public boolean isElderly(){
     if (this.age > 65)
       return true;
@@ -34,7 +38,7 @@ public class Person {
     person2.setSex('F');
     System.out.println(person2.isMale());
   }
-  
+
   
   
 
