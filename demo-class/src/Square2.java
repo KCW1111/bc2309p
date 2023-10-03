@@ -12,6 +12,7 @@ public class Square2 {
 
   }
 
+  //All arguements constructor (arguments -> parameters)
   public Square2(int length){
     this.intLength = length;
   }
@@ -57,6 +58,20 @@ public class Square2 {
     return area;
   }
 
+  public BigDecimal bdArea(){
+    BigDecimal area = this.length.multiply(this.length);
+    return area;
+  }
+
+  public void abc(){
+    System.out.println("Hello, this is abc method.");
+  }
+
+  public static void abc(String s){
+    System.out.println("Hello, this is static abc method" + s);
+  }
+
+
   public static void main(String[] args){
   BigDecimal line = BigDecimal.valueOf(3.3);
   BigDecimal result = area(line);
@@ -73,6 +88,20 @@ public class Square2 {
   // approach 2:
   Square2 square2 = new Square2((int)3);
   System.out.println(square2.area());
+
+  //static method call
+  int integerArea = area(3);
+  System.out.println(integerArea);
+  //Demo
+  System.out.println(Square2.area(4_0));
+
+  //revise square2 length ->7
+  square2.setLength(BigDecimal.valueOf(7));
+  System.out.println(square2.area());
+
+  Square2 square3 = new Square2();
+  square3.setLength(BigDecimal.valueOf(7));
+  System.out.println(square3.bdArea());
 
 }
   
