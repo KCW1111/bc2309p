@@ -2,6 +2,16 @@ public class Inventory {
   // primitives, wrapper class, String, altogether 18? types
   Stock[] stocks;
 
+  static String location = "TST";
+
+  // public void setLocation(String location) {
+  //   this.location = location;
+  // }
+
+  // public String getLocation() {
+  //   return location;
+  // }
+
 
   public Inventory(){
 
@@ -10,6 +20,7 @@ public class Inventory {
   public Inventory (Stock stock){
     this.stocks = new Stock[100]; //the shortcoming of array, you have to declare in advance the spaces required, can be replaced by other data structure
     this.stocks[0] = stock;
+    //this.location = location;
   }
 
   public void add(Stock stock) { //no necessary to be setStock, the meaning is to add/create stock
@@ -54,6 +65,8 @@ public class Inventory {
     Stock stock3 = new Stock(40.0);
 
     inventory.add(stock3);
+
+    System.out.println(Inventory.location);
     //inventory.add(stock);
 
     //System.out.println(inventory.getStock().getPrice());
