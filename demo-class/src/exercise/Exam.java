@@ -13,12 +13,22 @@ package exercise;
 
 public class Exam {
 
-  Subject[] subjects;
+  // Access Modifier: public , private, protected, package-private (default)
+  // public -> class, attribute, method, constructor
+  // private -> attribute, method, constructor
+  // protected -> attribute, method, constructor
+  // package-private -> class, attribute, method, constructor
+  
+  private Subject[] subjects;
 
   private static int size = 1; // as the first subject is add by creating exam, or in the Exam constructor use size++ too.
 
   static final String x = "hello"; // final, in compile time, compulary of value assignment, such as:
   static final int noOfdayOfAWeek = 7;
+
+  public static int getNoOfDayOfWeek(){ // for simplicity, use static method to aceess static variables
+    return noOfdayOfAWeek;
+  }
 
 
   public Exam(Subject subject){
@@ -75,6 +85,10 @@ for (int i = 0; i<this.subjects.length; i++){
     exam.addSubject(subject2);
 
     System.out.println("The average score is:" + exam.average());
+
+    System.out.println("Static method, Exam.getNoOfDayOfWeek()=" + Exam.getNoOfDayOfWeek());
+
+    
 
 
 
