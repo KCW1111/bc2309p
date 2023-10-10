@@ -1,4 +1,4 @@
-public class Person {
+public class PersonClass {
   int age;
   char sex; // 'M' or 'F'
   String firstName;
@@ -30,11 +30,11 @@ public class Person {
   }
 
   public static void main(String[] args) {
-    Person person = new Person();
+    PersonClass person = new PersonClass();
     person.setAge(65);
     System.out.println(person.isElderly()); // false
 
-    Person person2 = new Person();
+    PersonClass person2 = new PersonClass();
     person2.setSex('F');
     System.out.println(person2.isMale());
   }
