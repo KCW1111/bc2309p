@@ -3,13 +3,14 @@ package animal;
 public class Dog extends Animal{
 
   private String name;
+  // parents class private variables will not be extended, public okay
 
   public Dog(){
 
   }
 
   public Dog(double age, double weight, String name){
-    super(age,weight); // this call must be done first before pass the below lines
+    super(age,weight); // this call must be done first before pass the below lines, always be the first line of the constructor here
     this.name = name;
   }
   
