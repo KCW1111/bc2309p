@@ -5,5 +5,16 @@ public class SmallBird extends Bird{
   // public void fly(){
 
   // }
+
+  public SmallBird(String name){
+    super(name);
+  }
+
+  public static void main(String[] args) {
+    Bird b1 = Bird.valueOf("John");
+    SmallBird sm1 = new SmallBird("ABC");
+    
+    sm1.equals("abc");
+  }
   
 }
