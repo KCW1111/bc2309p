@@ -15,5 +15,10 @@ public interface Movable {//a contract
 
   //static staticPrintWinner("Bus");
 
+  //After 2014, Java 8, more features:
+  //Abstract function available
+
+  
+
 
 }
