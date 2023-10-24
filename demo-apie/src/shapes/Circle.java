@@ -57,8 +57,8 @@ public class Circle extends Shape{
     // double d1 = result / 100.0; //becareful about result / 100, long/integer is not double
     // System.out.println(d1);
     //System.out.println("circle area=" + Math.round(circle.area() * 100)/100);
-    double d2 = circle.area(HALF_UP,2).doubleValue();
-    System.out.println(d2);
+    //double d2 = circle.area(HALF_UP,2).doubleValue();
+    //System.out.println(d2);
   }
 
 
