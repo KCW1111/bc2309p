@@ -3,13 +3,17 @@ package shapes;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Objects;
+import enums.Color;
 
 public class Circle extends Shape{
 
   private static final int HALF_UP = 0;
   private double radius;
 
-  public Circle(double radius){
+  // constructor
+
+  public Circle(double radius, Color color){
+    super(color);
     this.radius = radius;
   }
 
@@ -19,6 +23,10 @@ public class Circle extends Shape{
 
   public void setRadius(double radius) {
     this.radius = radius;
+  }
+
+  public double getDiameter(){
+    return this.radius * 2;
   }
 
   @Override
@@ -52,13 +60,17 @@ public class Circle extends Shape{
   }
 
   public static void main(String[] args) {
-    Circle circle = new Circle(3.5);
+    Circle circle = new Circle(3.5, Color.BLACK);
     // long result = Math.round(circle.area()* 100);
     // double d1 = result / 100.0; //becareful about result / 100, long/integer is not double
     // System.out.println(d1);
     //System.out.println("circle area=" + Math.round(circle.area() * 100)/100);
     //double d2 = circle.area(HALF_UP,2).doubleValue();
     //System.out.println(d2);
+
+    Shape shape = new Circle(4,Color.WHITE);
+    System.out.println(shape.getClass());
+    System.out.println(shape.area(RoundingMode.FLOOR, 2));
   }
 
 
