@@ -10,6 +10,35 @@ public class Circle extends Shape{
   private static final int HALF_UP = 0;
   private double radius;
 
+  // Encapsulating Constructor
+  // public static Circle of(double radius, Color color){
+  //   return new Circle(radius,color);
+  // }
+
+  // // constructor
+
+  // private Circle(double radius, Color color){
+  //   super(color);
+  //   this.radius = radius;
+  // }
+
+  public static Circle of(double radius, Color color){ //Overloading
+    return new Circle(radius, color);
+  }
+
+  public static Circle of(double radius){ // Overloading
+    return new Circle(radius, Color.BLACK);
+  }
+
+  public static Circle of(Color color){ // Overloading
+    return new Circle(1.0, color);
+  }
+
+
+  public static Circle ofBlue(double radius){ // Overloading
+    return new Circle(radius, Color.BLUE);
+  }
+
   // constructor
 
   public Circle(double radius, Color color){
@@ -17,12 +46,24 @@ public class Circle extends Shape{
     this.radius = radius;
   }
 
-  public double getRadius() {
-    return radius;
+  public BigDecimal getRadius() {
+    return BigDecimal.valueOf(this.radius);
   }
+
+  // public double getRadius() {
+  //   return radius;
+  // }
 
   public void setRadius(double radius) {
     this.radius = radius;
+  }
+
+  @Override
+  public void setColor(Color color){
+    super.setColor(color);
+    //this.color = color;
+    this.radius = this.radius + 1.0; // bug when double plus double, it should use BigDecimal
+    // this.radius = BigDecimal.valueOf(this.radius).add(BigDecimal.ONE).doubleValue();
   }
 
   public double getDiameter(){
@@ -72,6 +113,17 @@ public class Circle extends Shape{
     System.out.println(shape.getClass());
     System.out.println(shape.area(RoundingMode.FLOOR, 2));
   }
+
+  Circle circle2 = Circle.ofBlue(5);
+
+  Circle circle3 = Circle.of(Color.WHITE);
+  Circle circle4 = Circle.of(3.9);
+  Circle circle5 = Circle.of(3.9,Color.BLACK);
+
+  // valueOf() -> static method (used by class)
+  String str = String.valueOf(1);
+  String str2 = String.valueOf('1');
+  String str3 = String.valueOf(true);
 
 
 

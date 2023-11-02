@@ -19,6 +19,10 @@ public abstract class Shape {
     return this.color;
   }
 
+   public void setColor(Color color){
+    this.color = color;
+  }
+
   public static Shape[] shapes;
 
   static{
@@ -52,8 +56,10 @@ public abstract class Shape {
 
   // new 2 Circle and 1 Square, and put them into the Shape[]
   public static void main(String[] args) {
-    Circle circle1 = new Circle(3, Color.BLACK);
-    Circle circle2 = new Circle(4, Color.WHITE);
+    //Circle circle1 = new Circle(3, Color.BLACK);
+    Circle circle1 = Circle.of(3, Color.BLACK); //bcos of the encapsulation of the Circle Constructor
+    //Circle circle2 = new Circle(4, Color.WHITE);
+    Circle circle2 = Circle.of(4, Color.WHITE);
     Square square1 = new Square(Color.BLUE, 10);
 
     Shape.add(circle1);
