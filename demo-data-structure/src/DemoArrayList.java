@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class DemoArrayList {
 
@@ -139,6 +140,33 @@ public class DemoArrayList {
             //System.out.println(obj.getClass());
     }
     System.out.println(Arrays.toString(arr2));
+
+
+    //List
+    ArrayList<String> strings3 = new ArrayList<>();
+    List<String> strings4 = new ArrayList<>(); // As ArrayList is implementing List interface, so the number of methods (in strings4) can be called is lesser or equal to ArrayList
+
+    // Demo:
+    // ArrayList.class implementing Interface List
+    // So, the method in List must be implemented by ArrayList,
+    // but, some methods in ArrayList may not be in List
+
+    // In simple words
+    // Line 146 has 100 methods to implement, line 147 has lesser or equals to 100 methods to call
+    // also the number of methods can be used is determined by LEFT HAND SIDE
+
+    strings3.add("Hello");
+    strings4.add("Hello");
+
+    strings3.remove("Hello");
+    strings4.remove("Hello");
+
+    System.out.println("strings3=" + strings3);
+    System.out.println("strings4=" + strings4);
+
+
+    
+
 
     }
 }
