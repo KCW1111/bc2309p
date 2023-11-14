@@ -10,7 +10,8 @@ public class DemoLinkedList {
     System.out.println(strings.contains("world"));
 
 
-    List<String> strings2 = new LinkedList<>();
+    // List<String> strings2 = new LinkedList<>();
+    List<String> strings2 = DemoLinkedList.getEmptyList(0); // return object (ArrayList or LinkedList)
     strings.add("hello");
     strings.add("world");
     System.out.println(strings.contains("world"));
