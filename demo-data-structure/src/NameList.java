@@ -1,6 +1,8 @@
 // Design a Class (Node), link up another Node object
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class NameList {
 
@@ -125,6 +127,17 @@ public class NameList {
 
   System.out.println(node1.remove("XYZ"));
   //System.out.println(nl.getNext().getNext().getNext().id);
+
+
+
+  List<String> nl4 = new ArrayList<>();
+  nl4 = new LinkedList<>();
+  // Compile time in Java
+  nl4.add("ABC") ; // List<String> determine which methods can be invoiked
+  // Run time in Java: nl4 will know which object it points to
+  nl4.remove(0);
+
+  System.out.println(nl4.size()); // 0
 
   }
   
