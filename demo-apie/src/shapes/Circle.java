@@ -11,20 +11,20 @@ public class Circle extends Shape{
   private double radius;
 
   // Encapsulating Constructor
-  // public static Circle of(double radius, Color color){
-  //   return new Circle(radius,color);
-  // }
-
-  // // constructor
-
-  // private Circle(double radius, Color color){
-  //   super(color);
-  //   this.radius = radius;
-  // }
-
-  public static Circle of(double radius, Color color){ //Overloading
-    return new Circle(radius, color);
+  public static Circle of(double radius, Color color){
+    return new Circle(radius,color);
   }
+
+  // constructor
+
+  private Circle(double radius, Color color){
+    super(color);
+    this.radius = radius;
+  }
+
+  // public static Circle of(double radius, Color color){ //Overloading
+  //   return new Circle(radius, color);
+  // }
 
   public static Circle of(double radius){ // Overloading
     return new Circle(radius, Color.BLACK);
@@ -41,10 +41,10 @@ public class Circle extends Shape{
 
   // constructor
 
-  public Circle(double radius, Color color){
-    super(color);
-    this.radius = radius;
-  }
+  // public Circle(double radius, Color color){
+  //   super(color);
+  //   this.radius = radius;
+  // }
 
   public BigDecimal getRadius() {
     return BigDecimal.valueOf(this.radius);

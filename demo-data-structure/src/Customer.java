@@ -5,6 +5,10 @@ public class Customer {
 
   private String name;
 
+  public String getName(){
+    return this.name;
+  }
+
    private ArrayList<Order> orders;
 
    public Customer(String name){
@@ -36,6 +40,10 @@ public class Customer {
       totalOrderAmount = totalOrderAmount.add(BigDecimal.valueOf(order.total()));
     }
     return totalOrderAmount.doubleValue();
+  }
+
+  public String toString(){
+    return this.name;
   }
   
 
