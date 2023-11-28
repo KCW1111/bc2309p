@@ -30,8 +30,6 @@ public class LC2073 {
       // <=0
       if (head == k)
         break;
-
-
     }
 
     return second;
