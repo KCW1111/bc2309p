@@ -1,18 +1,19 @@
 public class DemoUnCheckeException {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws BusinessException {
     
     int result = 0;
     
     // Example 1:
     System.out.println(divide(9,3)); // 3
-    System.out.println(divide(9,0)); // java.lang.ArithmeticException
+    //System.out.println(divide(9,0)); // java.lang.ArithmeticException
 
     try{
       // Since divide3 would throw a check excpetion,
       // so the method caller has to handle the method call by try catch
-      result = divide3(9,3);
+      result = divide3(9,0);
     }catch(BusinessException e){
-      result = -1;
+      //result = -1;
+      System.out.println(e.getErrMC());
     }
 
     // Example 2:
@@ -46,7 +47,7 @@ public class DemoUnCheckeException {
     try{
       result = x/y;
     }catch (ArithmeticException e){ // Convert uncheck exception to checked exception
-      throw new BusinessException();
+      throw new BusinessException(ErrCode.ARITHEMATIC_EXCEPTION);
     }
     return result;
   }

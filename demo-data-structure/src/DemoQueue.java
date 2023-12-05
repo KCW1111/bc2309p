@@ -7,7 +7,8 @@ public class DemoQueue {
     // If Linkedlist (Class) has 100 methods
     // If Queue (Interface) has 60 methods
     // If List (Interface) has 40 methods
-    Queue<String> strings = new LinkedList<>();
+    Queue<String> strings = new LinkedList<>();//Frist create ArrayList or LinkedList, inherit all the things and by Queue<String> to control how many things to be used/shown inherited from ArrayList or LinkedList.
+    
     strings.add("ABC");
     strings.add("IJK");
     strings.add("DEF");
