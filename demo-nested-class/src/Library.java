@@ -4,6 +4,11 @@ public class Library {
   public Library(String prefix){
     this.prefix = prefix;
   }
+
+  public Book createBook(String id){
+    return new Book(id);
+  }
+
   public class Book {
 
     private String id;
