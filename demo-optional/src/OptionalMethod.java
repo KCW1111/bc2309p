@@ -24,10 +24,10 @@ public class OptionalMethod {
     //int index = -1;
     for (int i=0; i<database.length; i++){
       if (database[i] == "ABC"){
-        return Optional.of(i);
+        return Optional.of(i); // Optional.of(), is indeed a constructor, object is made
       }  
   }
-  return Optional.empty(); 
+  return Optional.empty(); // Optional.of(), is indeed a constructor, object is made
  
 }
 
