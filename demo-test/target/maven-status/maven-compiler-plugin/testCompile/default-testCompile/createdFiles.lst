@@ -1,1 +1,4 @@
 CalculatorsTests.class
+InstancePerClassTest.class
+HamcrestTest.class
+InstancePerMethodTest.class

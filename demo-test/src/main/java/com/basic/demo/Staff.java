@@ -18,10 +18,14 @@ public class Staff extends Person{
 
   public Staff(String name, int age) {
     super(name, age);
-    //TODO Auto-generated constructor stub
+    
   }
   private String name;
   private int age;
+
+  public boolean isAdult(){
+    return this.age >=18;
+  }
 
   public static void main(String[] args) {
 

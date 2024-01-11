@@ -19,6 +19,9 @@ import lombok.experimental.SuperBuilder;
 public class Person {
   private String name;
   private int age;
+  public static String concat(String s1){
+    return "hello " + s1;
+  }
 
   public int getAge() {
     return age;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CalculatorsTests" time="1.567" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InstancePerClassTest" time="0.072" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -55,28 +55,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAdd" classname="CalculatorsTests" time="0.002"/>
-  <testcase name="testThrow" classname="CalculatorsTests" time="1.512">
-    <system-out><![CDATA[hello
-]]></system-out>
-  </testcase>
-  <testcase name="testSort" classname="CalculatorsTests" time="0.005"/>
-  <testcase name="combineTestAAndTestB" classname="CalculatorsTests" time="0.007"/>
-  <testcase name="testBoolean" classname="CalculatorsTests" time="0.018">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at CalculatorsTests.testBoolean(CalculatorsTests.java:46)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="testA" classname="CalculatorsTests" time="0.002"/>
-  <testcase name="testB" classname="CalculatorsTests" time="0.001"/>
-  <testcase name="testSampleObject" classname="CalculatorsTests" time="0.003"/>
+  <testcase name="testA" classname="InstancePerClassTest" time="0.024"/>
+  <testcase name="testB" classname="InstancePerClassTest" time="0.002"/>
 </testsuite>
