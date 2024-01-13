@@ -12,7 +12,7 @@ import com.basic.demo.Staff;
 // file name has to be XXXXTest.java or XXXXTests.java
 // Otherwise, mvn cannot locate the test files.
 @DisplayName("Calculator Test Plan")
-public class CalculatorsTests {
+public class CalculatorTests {
 
   @Test
   @DisplayName("Display the name to test")

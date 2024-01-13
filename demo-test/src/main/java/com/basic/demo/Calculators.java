@@ -11,6 +11,11 @@ public class Calculators {
     return x+y;
   }
 
+
+  public int addition(int x, int y){
+    return x+y;
+  }
+
   public static List<Integer> sort(int[] arr){
     // arr -> list
     // list -> sort?
